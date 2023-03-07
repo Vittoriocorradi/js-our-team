@@ -18,15 +18,13 @@ TYPO
 
 body {
     text-align: center;
-}
-
-main .heading {
-    color: #2c2c2c;
-    font-family: 'Montserrat', sans-serif;   
+    font-family: 'Montserrat', sans-serif;
+    color: #6a645d;   
 }
 
 main .heading h1 {
     text-transform: uppercase;
+    color: #2c2c2c;
     font-weight: 400;
 }
 
@@ -34,8 +32,13 @@ main .heading p {
     line-height: 1.8em;
 }
 
-main .container {
+main .container .box .name {
+    font-size: 1.4em;
     font-family: 'Vidaloka', serif;
+}
+
+main .container .box .role {
+    font-size: 0.8em;
 }
 
 /*
@@ -81,14 +84,21 @@ main .container {
     padding-top: 4.0625rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 1.875rem;
 }
 
 main .container .box {
-    background-color: red;
-    width: calc(100% / 3 - 2.5rem);
+    width: calc(100% / 3 - 1.875rem);
+    background-color: #fff;
+    padding-bottom: 1.875rem;
 }
 
-ul {
+main .container .box img {
+    width: 100%;
+    margin-bottom: 1.5625rem;
+}
+
+main .container .box .name {
+    width: 100%;
     margin-bottom: .625rem;
 }
