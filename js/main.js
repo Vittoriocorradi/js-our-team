@@ -39,9 +39,13 @@ const team = [
     }
 ]
 
-console.log(team);
-
 // Ciclo per prendere i singoli elementi della lista
 for (let i = 0; i < team.length; i++) {
-    console.log(team[i]);
+    const person = team[i];
+    console.log(`Membro ${i + 1}`);
+
+    //Ciclo per prendere le singole proprietà dell'oggetto 
+    for (let key in team[i]) {
+        console.log(`${key}: ${team[i][key]}`);
+    }
 }
