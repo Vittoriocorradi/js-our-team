@@ -38,6 +38,6 @@ ESERCIZIO
 
 
 Ho un gruppo di sei persone, per ogni persona so il nome, il ruolo e ho un'immagine
-Creo una lista con le sei persona e per ogni persona ne specifico il nome, il ruolo e l'indirizzo dell'immagine
+Creo una lista con le sei persona e per ogni persona ne specifico il nome, il ruolo e la stringa dell'immagine
 Prendo le persone di questa lista una per una e scrivo in console ogni informazione che so di loro
 Con lo stesso procedimento scrivo le informazioni di ogni persona sulla pagina
