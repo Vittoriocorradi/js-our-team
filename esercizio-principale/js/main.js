@@ -1,5 +1,16 @@
 'use strict';
 
+// FUNZIONI
+
+// Funzione per creare e appendere un singolo elemento
+function createAppendSingle(container, element) {
+    const list = document.createElement(element);
+    container.append(list);
+    return list;
+}
+
+// MAIN
+
 // Membri del team
 const team = [
     {
@@ -45,15 +56,17 @@ const container = document.getElementById('container');
 for (let i = 0; i < team.length; i++) {
     const person = team[i];
     console.log(`Membro ${i + 1}`);
-    const list = document.createElement('ul');
-    container.append(list);
+    
+    // Creo ul appesi al contenitore
+    const list = createAppendSingle(container, 'ul');
     list.append(`Membro ${i + 1}`);
 
     //Ciclo per prendere le singole proprietà dell'oggetto 
     for (let key in person) {
+
+        // Creo li appesi agli ul
+        const listElement = createAppendSingle(list, 'li');
         console.log(`${key}: ${person[key]}`);
-        const listElement = document.createElement('li');
         listElement.innerHTML = `${key}: ${person[key]}`;
-        list.append(listElement);
     }
 }
