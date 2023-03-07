@@ -39,13 +39,21 @@ const team = [
     }
 ]
 
+const container = document.getElementById('container');
+
 // Ciclo per prendere i singoli elementi della lista
 for (let i = 0; i < team.length; i++) {
     const person = team[i];
     console.log(`Membro ${i + 1}`);
+    const list = document.createElement('ul');
+    container.append(list);
+    list.append(`Membro ${i + 1}`);
 
     //Ciclo per prendere le singole proprietà dell'oggetto 
-    for (let key in team[i]) {
-        console.log(`${key}: ${team[i][key]}`);
+    for (let key in person) {
+        console.log(`${key}: ${person[key]}`);
+        const listElement = document.createElement('li');
+        listElement.innerHTML = `${key}: ${person[key]}`;
+        list.append(listElement);
     }
 }

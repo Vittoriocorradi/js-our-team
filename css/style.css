@@ -9,3 +9,7 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+ul {
+    margin-bottom: .625rem;
+}
